@@ -7,16 +7,33 @@
   </head>
 
   <body>
-    <div id="title"></div>
-    <form>
-      <label for="name">Name</label>
-      <input type="text" id="name" placeholder="Engineering?" />
-      <input type="submit" />
-    </form>
-    <!--
-    Where is this public/bundle.js file coming from?
-    It comes from our trusty friend, webpack.
-  -->
+    <div id="title">
+      <h1>Selection Sort</h1>
+    </div>
+    <div id="container">
+      <div id="makearray">
+        <ul id="firstarray">
+          <li class="itm1a"></li>
+          <li class="itm2a"></li>
+          <li class="itm3a"></li>
+          <li class="itm4a"></li>
+          <li class="itm5a"></li>
+          <li class="itm6a"></li>
+        </ul>
+        <button type="button" id="firstbtn">Click to Make an Array!</button>
+      </div>
+      <div id="sortarray">
+        <ul id="secondarray">
+          <li class="itm1b"></li>
+          <li class="itm2b"></li>
+          <li class="itm3b"></li>
+          <li class="itm4b"></li>
+          <li class="itm5b"></li>
+          <li class="itm6b"></li>
+        </ul>
+        <button type="button" id="secondbtn">Click to Sort the Array!</button>
+      </div>
+    </div>
     <script type="text/javascript" src="/public/bundle.js"></script>
   </body>
 </html>

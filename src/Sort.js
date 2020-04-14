@@ -7,10 +7,9 @@ class selectionSort {
     for (let i = 0; i < arrayToSort.length; i++) {
       for (let j = i + 1; j < arrayToSort.length; j++) {
         if (arrayToSort[j] < arrayToSort[i]) {
-          let currentHighValue = arrayToSort[i];
-          console.log(currentHighValue);
+          let valueToSwap = arrayToSort[i];
           arrayToSort[i] = arrayToSort[j];
-          arrayToSort[j] = currentHighValue;
+          arrayToSort[j] = valueToSwap;
         }
       }
     }
@@ -19,6 +18,9 @@ class selectionSort {
 
   returnValue(value) {
     return value;
+  }
+  returnArray() {
+    return this.array;
   }
 }
 
