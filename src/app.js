@@ -18,7 +18,6 @@ const createRandomArr = () => {
 
 //making the new sort class with the randomly created array and supporting variables
 const mySort = new Sort(createRandomArr());
-// const mySorter = mySort.sort();
 const randomArr = mySort.returnArray();
 
 //assigning variables to each list item in the first list
@@ -55,29 +54,24 @@ const handleSecondButton = () => {
   mySort.sort();
   setInterval(() => {
     secondArrayItemOne.textContent = randomArr[0];
-  }, 1000);
+  }, 2000);
   setInterval(() => {
     secondArrayItemTwo.textContent = randomArr[1];
-  }, 3000);
+  }, 4000);
   setInterval(() => {
     secondArrayItemThree.textContent = randomArr[2];
-  }, 5000);
+  }, 6000);
   setInterval(() => {
     secondArrayItemFour.textContent = randomArr[3];
-  }, 7000);
+  }, 8000);
   setInterval(() => {
     secondArrayItemFive.textContent = randomArr[4];
-  }, 9000);
+  }, 10000);
   setInterval(() => {
     secondArrayItemSix.textContent = randomArr[5];
-  }, 11000);
+  }, 12000);
 };
 
 //sorts and populates the list on click
 const secondButton = document.querySelector("#secondbtn");
 secondButton.addEventListener("click", handleSecondButton);
-
-// const form = document.querySelector("form");
-// document.addEventListener("DOMContentLoaded", () => {
-//   form.onsubmit = changeTitle;
-// });

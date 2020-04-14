@@ -16,9 +16,6 @@ class selectionSort {
     return arrayToSort;
   }
 
-  returnValue(value) {
-    return value;
-  }
   returnArray() {
     return this.array;
   }
