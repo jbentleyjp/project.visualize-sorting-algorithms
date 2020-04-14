@@ -1,8 +1,3 @@
-/* Example Code
-      The following is just some example code for you to play around with.
-      No need to keep this---it's just some code so you don't feel too lonely.
-*/
-
 // How can we use require here if it's frontend? We can thank webpack.
 const Sort = require("./Sort");
 
@@ -58,12 +53,24 @@ firstButton.addEventListener("click", handleFirstButton);
 //a function that sorts then populates the second list
 const handleSecondButton = () => {
   mySort.sort();
-  secondArrayItemOne.textContent = randomArr[0];
-  secondArrayItemTwo.textContent = randomArr[1];
-  secondArrayItemThree.textContent = randomArr[2];
-  secondArrayItemFour.textContent = randomArr[3];
-  secondArrayItemFive.textContent = randomArr[4];
-  secondArrayItemSix.textContent = randomArr[5];
+  setInterval(() => {
+    secondArrayItemOne.textContent = randomArr[0];
+  }, 1000);
+  setInterval(() => {
+    secondArrayItemTwo.textContent = randomArr[1];
+  }, 3000);
+  setInterval(() => {
+    secondArrayItemThree.textContent = randomArr[2];
+  }, 5000);
+  setInterval(() => {
+    secondArrayItemFour.textContent = randomArr[3];
+  }, 7000);
+  setInterval(() => {
+    secondArrayItemFive.textContent = randomArr[4];
+  }, 9000);
+  setInterval(() => {
+    secondArrayItemSix.textContent = randomArr[5];
+  }, 11000);
 };
 
 //sorts and populates the list on click
